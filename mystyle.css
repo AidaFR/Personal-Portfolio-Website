@@ -1,0 +1,208 @@
+
+/* Stil pentru bara de nav */
+nav {
+  /* display: flex; */
+  background-color: darkgreen; 
+  padding: 15px; 
+}
+
+/* Stil pentru fiecare el <li> din meniu */
+nav ul {
+  list-style: none;
+  display: flex;
+ float: right;
+  align-items: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+/* Stil pentru link-urile din meniu */
+nav a {
+  text-decoration: none;
+  color: white; /* culoarea pentru link-uri */
+  font-weight: normal; /* setarea textului la normal (non-bold) */
+  font-size: 20px; 
+  transition: color 0.3s, font-size 0.3s, font-weight 0.3s; /* animatie*/
+}
+
+/* Stil pentru link-uri hoverate */
+nav a:hover {
+  color: white; 
+  font-weight: bold; 
+  font-size: 22px;
+}
+
+.background-container {
+  background-image: url('muzeu.jpg'); 
+  background-size: cover; /* Acopera intreaga suprafata a containerului cu imaginea */
+  background-position: center; 
+  background-repeat: no-repeat; 
+  height: 100vh; 
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+  position: relative; /* proprietate pentru a pozitiona elementele relative la acest container */
+}
+#logo{width:10vw;
+height: 5vh;
+position: relative;}
+
+/* Stilizeaza imag portret */
+.content img {
+  width: 480px; 
+  margin-bottom: -4px;
+}
+/* Stilizeaza containerul pentru titlu, subtitlu și text */
+.text {
+  text-align: center;
+  font-family:  Garamond, serif;
+  padding: 15px;
+  color: #333; 
+}
+
+.text h1 {
+  font-size: 42px;
+  /*font-family: "Dancing Script", cursive;*/
+  margin-bottom: 0px;
+  padding-top: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+
+}
+
+.text h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+.text p {
+  font-size: 22px;
+}
+div.scroll-container {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
+
+footer#Contact {
+  background-color: darkgreen; 
+  color: white; 
+  padding: 20px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+}
+
+
+footer#Contact h3 {
+  font-family: Garamond, serif;
+  font-size: 28px;
+  color: rgb(13, 29, 13);
+}
+
+.contact-icons a {
+  text-decoration: none;
+  color: white;
+}
+
+.contact-icons a:hover {
+  text-decoration: underline;
+}
+
+.contact-icons a::before {
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+/* Stilizeaza formularul de mesaje */
+footer#Contact .message-box {
+  max-width: 50%; /* Latime maxima (pentru formularul de mesaje), din footer */
+  font-family: Garamond, serif;
+
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-form label,
+.footer-form textarea,
+.footer-form input {
+  margin-bottom: 10px;
+}
+
+.footer-form textarea {
+  height: 80px;
+}
+
+.container {
+  display: flex;
+  font-family:  Garamond, serif;
+  padding: 20px; 
+  min-height: 100vh; 
+}
+
+.left {
+     background-image: url('Artboard.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+    flex: 0.28;
+    display: flex;
+    align-items: flex-start; /* Aliniaza continutul in partea de sus a containerului */
+    text-align: center;
+   
+}
+.left .contentleft {
+  max-width: 300px; /* Ajusteaza latimea continutului in functie de nevoie*/
+  padding: 30px;
+  margin-left: 30px;
+  background-color: rgba(255, 220, 155, 0.63);
+  border-radius: 10%;
+}
+
+.left img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.left p, .left ul {
+  margin: 10px 0;
+  padding: 0;
+}
+
+
+.right {
+  flex: 1; /*  1 pentru a ocupa tot spatiul ramas */
+  padding: 20px;
+  background-color: #f2f2f2; 
+}
+
+.right p {
+  font-size: 18px;
+  color: #333; 
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  nav {width:100%;
+  display:flex;}
+  .scroll-container img {
+      width: 100%;
+      margin-bottom: 10px; 
+  }
+}
